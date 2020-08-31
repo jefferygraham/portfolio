@@ -32,7 +32,7 @@
     </div>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">Jeffery L. Graham</a>
       <button
         class="navbar-toggler"
@@ -64,6 +64,76 @@
         </ul>
       </div>
     </nav>
+
+    <!-- PORTFOLIO SECTION -->
+    <div class="container d-flex flex-column align-items-center">
+      <h2 class="border-bottom">Portfolio</h2>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            id="bootstrap-tab"
+            data-toggle="tab"
+            href="#bootstrap"
+            role="tab"
+            aria-controls="bootstrap"
+            aria-selected="true"
+            >Bootstrap</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="profile-tab"
+            data-toggle="tab"
+            href="#profile"
+            role="tab"
+            aria-controls="profile"
+            aria-selected="false"
+            >React</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="contact-tab"
+            data-toggle="tab"
+            href="#contact"
+            role="tab"
+            aria-controls="contact"
+            aria-selected="false"
+            >React Native</a
+          >
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="bootstrap"
+          role="tabpanel"
+          aria-labelledby="bootstrap-tab"
+        >
+          <img src="./images/travel-right-bootstrap-project.jpg" alt="" />
+        </div>
+        <div
+          class="tab-pane fade"
+          id="profile"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+        >
+          ...
+        </div>
+        <div
+          class="tab-pane fade"
+          id="contact"
+          role="tabpanel"
+          aria-labelledby="contact-tab"
+        >
+          ...
+        </div>
+      </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
