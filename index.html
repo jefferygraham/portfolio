@@ -16,6 +16,11 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -32,7 +37,7 @@
     </div>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <a class="navbar-brand" href="#">Jeffery L. Graham</a>
       <button
         class="navbar-toggler"
@@ -66,9 +71,9 @@
     </nav>
 
     <!-- PORTFOLIO SECTION -->
-    <div class="container d-flex flex-column align-items-center">
-      <h2 class="border-bottom">Portfolio</h2>
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <div class="container d-flex flex-column align-items-center my-4">
+      <h2 class="border-bottom mb-4">Portfolio</h2>
+      <ul class="nav nav-tabs" id="portfolioTab" role="tablist">
         <li class="nav-item" role="presentation">
           <a
             class="nav-link active"
@@ -84,73 +89,186 @@
         <li class="nav-item" role="presentation">
           <a
             class="nav-link"
-            id="profile-tab"
+            id="javascript-tab"
             data-toggle="tab"
-            href="#profile"
+            href="#javascript"
             role="tab"
-            aria-controls="profile"
+            aria-controls="javascript"
             aria-selected="false"
-            >React</a
+            >Vanilla JS</a
           >
         </li>
         <li class="nav-item" role="presentation">
           <a
             class="nav-link"
-            id="contact-tab"
+            id="react-tab"
             data-toggle="tab"
-            href="#contact"
+            href="#react"
             role="tab"
-            aria-controls="contact"
+            aria-controls="react"
+            aria-selected="false"
+            >React</a
+          >
+        </li>
+        <!-- <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="react-native-tab"
+            data-toggle="tab"
+            href="#react-native"
+            role="tab"
+            aria-controls="react-native"
             aria-selected="false"
             >React Native</a
           >
-        </li>
+        </li> -->
       </ul>
-      <div class="tab-content" id="myTabContent">
+      <div class="tab-content" id="myPortfolioTabContent">
         <div
           class="tab-pane fade show active"
           id="bootstrap"
           role="tabpanel"
           aria-labelledby="bootstrap-tab"
         >
-          <div class="row">
-            <div class="col">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. A,
-              doloremque.
+          <div class="row row-content">
+            <div class="col-md">
+              <h3>
+                Travel Right
+                <a
+                  href="https://github.com/jefferygraham/nucamp-bootstrap-portfolio"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="text-secondary"
+                  ><i class="fa fa-github" aria-hidden="true"></i
+                ></a>
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laborum, voluptatum!
+              </p>
             </div>
-            <div class="col">
-              <div class="card">
+            <div class="col-md">
+              <div class="card shadow">
                 <img
                   src="./images/travel-right-bootstrap-project.jpg"
                   class="card-img-top"
-                  alt="..."
+                  alt="Screenshot of Travel Right project"
                 />
-                <div class="card-body">
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                </div>
               </div>
             </div>
           </div>
         </div>
         <div
           class="tab-pane fade"
-          id="profile"
+          id="javascript"
           role="tabpanel"
-          aria-labelledby="profile-tab"
+          aria-labelledby="javascript-tab"
         >
-          ...
+          <div class="row row-content">
+            <div class="col-md">
+              <h3>
+                Travel Planner App
+                <a
+                  href="https://github.com/jefferygraham/FEND-Capstone-Travel-App"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="text-secondary"
+                  ><i class="fa fa-github" aria-hidden="true"></i
+                ></a>
+              </h3>
+              <p>
+                Travel app that obtains a desired trip location & date from the
+                user, and displays weather and an image of the location using
+                information obtained from external APIs.
+              </p>
+            </div>
+            <div class="col-md">
+              <div class="card shadow">
+                <img
+                  src="./images/travel-planner-vanilla-js-project.png"
+                  class="card-img-top"
+                  alt="Screenshot of Travel Planner Journal project"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row row-content">
+            <div class="col-md">
+              <h3>
+                Article Analyzer App
+                <a
+                  href="https://github.com/jefferygraham/FEND-Evaluate-News-NLP"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="text-secondary"
+                  ><i class="fa fa-github" aria-hidden="true"></i
+                ></a>
+              </h3>
+              <p>
+                Web tool that allows users to run Natural Language Processing
+                (NLP) on articles or blogs found on other websites. The tool
+                uses an exciting new api called Aylien to interact with their
+                NLP system. This tool will gives back pertinent information
+                about the article, like whether the content is subjective
+                (opinion) or objective (fact-based) and whether it is positive,
+                neutral, or negative in tone.
+              </p>
+            </div>
+            <div class="col-md">
+              <div class="card shadow">
+                <img
+                  src="./images/article-anaylzer-vanilla-js-project.png"
+                  class="card-img-top"
+                  alt="Screenshot of Article Analyzer project"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row row-content">
+            <div class="col-md">
+              <h3>
+                Weather Journal App
+                <a
+                  href="https://github.com/jefferygraham/FEND-Weather-Journal-App"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="text-secondary"
+                  ><i class="fa fa-github" aria-hidden="true"></i
+                ></a>
+              </h3>
+              <p>
+                This project utilizes async & await to get and post data via
+                Express, as well as retrieve data from the OpenWeatherMap API.
+                The data is used to dynamically update the DOM.
+              </p>
+            </div>
+            <div class="col-md">
+              <div class="card shadow">
+                <img
+                  src="./images/weather-journal-vanilla-js-project.png"
+                  class="card-img-top border-bottom"
+                  alt="Screenshot of Weather Journal project"
+                />
+              </div>
+            </div>
+          </div>
         </div>
         <div
           class="tab-pane fade"
-          id="contact"
+          id="react"
           role="tabpanel"
-          aria-labelledby="contact-tab"
+          aria-labelledby="react-tab"
         >
           ...
         </div>
+        <!-- <div
+          class="tab-pane fade"
+          id="react-native"
+          role="tabpanel"
+          aria-labelledby="react-native-tab"
+        >
+          ...
+        </div> -->
       </div>
     </div>
 
