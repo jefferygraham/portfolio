@@ -1,14 +1,14 @@
 #header {
   height: 100vh;
-  background: url('../images/jeffery-l-graham-header-image.png');
-}
+  background: url("../images/jeffery-l-graham-header-image.png"); }
+
+.navbar {
+  background-color: #60106b; }
 
 .row-content {
   padding: 50px 0;
   border-bottom: 1px ridge;
-  min-height: 200px;
-}
+  min-height: 200px; }
 
 .skills-icon {
-  width: 100px;
-}
+  width: 100px; }
