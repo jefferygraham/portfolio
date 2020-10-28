@@ -81,8 +81,12 @@
       <ul class="nav nav-tabs" id="portfolioTab" role="tablist">
         
         <li class="nav-item" role="presentation">
-          <a class="nav-link active text-secondary" id="react-tab" data-toggle="tab" href="#react-redux" role="tab"
+          <a class="nav-link active text-secondary" id="react-redux-tab" data-toggle="tab" href="#react-redux" role="tab"
             aria-controls="react-redux" aria-selected="true">React/Redux</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link text-secondary" id="react-native-tab" data-toggle="tab" href="#react-native" role="tab"
+            aria-controls="react-native" aria-selected="false">React-Native</a>
         </li>
         <li class="nav-item" role="presentation">
           <a
@@ -112,60 +116,104 @@
             >WordPress</a
           >
         </li>
-        <!-- <li class="nav-item" role="presentation">
-          <a
-            class="nav-link"
-            id="react-native-tab"
-            data-toggle="tab"
-            href="#react-native"
-            role="tab"
-            aria-controls="react-native"
-            aria-selected="false"
-            >React Native</a
-          >
-        </li> -->
       </ul>
       <div class="tab-content" id="myPortfolioTabContent">
-        <div
-          class="tab-pane fade"
-          id="bootstrap"
-          role="tabpanel"
-          aria-labelledby="bootstrap-tab"
-        >
+        <!-- React/Redux Projects -->
+        <div class="tab-pane fade show active" id="react-redux" role="tabpanel" aria-labelledby="react-redux-tab">
           <div class="row row-content">
             <div class="col-md">
               <h3>
-                Travel Right
-                <a
-                  href="https://github.com/jefferygraham/nucamp-bootstrap-portfolio"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="text-secondary"
-                  ><i class="fa fa-github" aria-hidden="true"></i
-                ></a>
+                Would You Rather App
+                <a href="https://github.com/jefferygraham/reactnd-project-would-you-rather" target="_blank"
+                  rel="noreferrer noopener" class="text-secondary"><i class="fa fa-github" aria-hidden="true"></i></a>
               </h3>
-              <p>Fictional Travel Agency Website using Bootstrap 4.</p>
+              <p>
+                This is a web app that lets a user play the “Would You Rather?” game. The game goes like this: A user is asked a
+                question in the form: “Would you rather [option A] or [option B] ?”.
+        
+                Users are able to ask and answer questions, see which questions they have/haven’t answered, see how other people
+                have
+                voted, and see the ranking of users on the leaderboard.
+        
+                Once the user logs in, the user is able to toggle between his/her answered and unanswered polls on the home
+                page. The
+                polls in both categories are arranged from the most recently created (top) to the least recently created
+                (bottom).
+        
+                Upon voting in a poll, all of the information of an answered poll is displayed. The user’s response is recorded
+                and
+                clearly visible on the poll details page. Users can only vote once per poll; they are not allowed to change
+                their answer
+                after they’ve voted. When the user comes back to the home page, the polling question appears in the “Answered”
+                column.
+              </p>
             </div>
             <div class="col-md">
               <div class="card shadow">
-                <img
-                  src="./images/travel-right-bootstrap-project.jpg"
-                  class="cover-image card-img-top"
-                  alt="Screenshot of Travel Right project"
-                />
+                <img src="./images/would-you-rather-react-redux.png" class="cover-image card-img-top"
+                  alt="Screenshot of Would You Rather App" />
                 <div class="middle">
-                  <a
-                    class="btn btn-dark"
-                    target="_blank"
-                    href="https://jefferygraham.github.io/nucamp-bootstrap-portfolio/"
-                    rel="noreferrer noopener"
-                    >See Live</a
-                  >
+                  <a class="btn btn-dark" target="_blank" rel="noreferrer noopener"
+                    href="https://jefferylgraham-would-you-rather.netlify.app/">See Live</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-content">
+            <div class="col-md">
+              <h3>
+                MyReads App
+                <a href="https://github.com/jefferygraham/reactnd-project-myreads-starter-1" target="_blank"
+                  rel="noreferrer noopener" class="text-secondary"><i class="fa fa-github" aria-hidden="true"></i></a>
+              </h3>
+              <p>
+                My Reads is a bookshelf app that allows you to select and
+                categorize books you have read, are currently reading, or want
+                to read. The project emphasizes using React to build the
+                application and provides an API server and client library that
+                you will use to persist information as you interact with the
+                application.
+              </p>
+            </div>
+            <div class="col-md">
+              <div class="card shadow">
+                <img src="./images/myreads-react-project.png" class="cover-image card-img-top"
+                  alt="Screenshot of MyReads App" />
+                <div class="middle">
+                  <a class="btn btn-dark" target="_blank" rel="noreferrer noopener"
+                    href="https://jefferylgraham-myreads.netlify.app/">See Live</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- React-Native projects -->
+        <div class="tab-pane fade" id="react-native" role="tabpanel" aria-labelledby="react-native-tab">
+          <div class="row row-content">
+            <div class="col-md">
+              <h3>
+                UdaciCards - Mobile Flash Cards
+                <a href="https://github.com/jefferygraham/udacicards" target="_blank" rel="noreferrer noopener"
+                  class="text-secondary"><i class="fa fa-github" aria-hidden="true"></i></a>
+              </h3>
+              <p>This is a mobile application that allows users to study collections of flashcards. The app will allow users to create
+              different categories of flashcards called "decks", add flashcards to those decks, then take quizzes on those decks.</p>
+            </div>
+            <div class="col-md">
+              <div class="card shadow">
+                <img src="./images/udacicards-mobile-flash-cards.jpg" class="cover-image card-img-top"
+                  alt="Screenshot of UdaciCards Mobile Flash Cards project" />
+                <div class="middle">
+                  <a class="btn btn-dark" target="_blank" href="https://github.com/jefferygraham/udacicards"
+                    rel="noreferrer noopener">View Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vanilla JS Projects -->
         <div
           class="tab-pane fade"
           id="javascript"
@@ -288,99 +336,32 @@
             </div>
           </div>
         </div>
-        <div
-          class="tab-pane fade show active"
-          id="react-redux"
-          role="tabpanel"
-          aria-labelledby="react-redux-tab"
-        >
+
+        <!-- Bootstrap projects -->
+        <div class="tab-pane fade" id="bootstrap" role="tabpanel" aria-labelledby="bootstrap-tab">
           <div class="row row-content">
             <div class="col-md">
               <h3>
-                Would You Rather App
-                <a
-                  href="https://github.com/jefferygraham/reactnd-project-would-you-rather"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="text-secondary"
-                  ><i class="fa fa-github" aria-hidden="true"></i
-                ></a>
+                Travel Right
+                <a href="https://github.com/jefferygraham/nucamp-bootstrap-portfolio" target="_blank" rel="noreferrer noopener"
+                  class="text-secondary"><i class="fa fa-github" aria-hidden="true"></i></a>
               </h3>
-              <p>
-                This is a web app that lets a user play the “Would You Rather?” game. The game goes like this: A user is asked a
-                question in the form: “Would you rather [option A] or [option B] ?”.
-                
-                Users are able to ask and answer questions, see which questions they have/haven’t answered, see how other people have
-                voted, and see the ranking of users on the leaderboard.
-                
-                Once the user logs in, the user is able to toggle between his/her answered and unanswered polls on the home page. The
-                polls in both categories are arranged from the most recently created (top) to the least recently created (bottom).
-                
-                Upon voting in a poll, all of the information of an answered poll is displayed. The user’s response is recorded and
-                clearly visible on the poll details page. Users can only vote once per poll; they are not allowed to change their answer
-                after they’ve voted. When the user comes back to the home page, the polling question appears in the “Answered” column.
-              </p>
+              <p>Fictional Travel Agency Website using Bootstrap 4.</p>
             </div>
             <div class="col-md">
               <div class="card shadow">
-                <img
-                  src="./images/would-you-rather-react-redux.png"
-                  class="cover-image card-img-top"
-                  alt="Screenshot of Would You Rather App"
-                />
+                <img src="./images/travel-right-bootstrap-project.jpg" class="cover-image card-img-top"
+                  alt="Screenshot of Travel Right project" />
                 <div class="middle">
-                  <a
-                    class="btn btn-dark"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    href="https://jefferylgraham-would-you-rather.netlify.app/"
-                    >See Live</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row row-content">
-            <div class="col-md">
-              <h3>
-                MyReads App
-                <a
-                  href="https://github.com/jefferygraham/reactnd-project-myreads-starter-1"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="text-secondary"
-                  ><i class="fa fa-github" aria-hidden="true"></i
-                ></a>
-              </h3>
-              <p>
-                My Reads is a bookshelf app that allows you to select and
-                categorize books you have read, are currently reading, or want
-                to read. The project emphasizes using React to build the
-                application and provides an API server and client library that
-                you will use to persist information as you interact with the
-                application.
-              </p>
-            </div>
-            <div class="col-md">
-              <div class="card shadow">
-                <img
-                  src="./images/myreads-react-project.png"
-                  class="cover-image card-img-top"
-                  alt="Screenshot of MyReads App"
-                />
-                <div class="middle">
-                  <a
-                    class="btn btn-dark"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    href="https://jefferylgraham-myreads.netlify.app/"
-                    >See Live</a
-                  >
+                  <a class="btn btn-dark" target="_blank" href="https://jefferygraham.github.io/nucamp-bootstrap-portfolio/"
+                    rel="noreferrer noopener">See Live</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        
+        <!-- WordPress Projects -->
         <div
           class="tab-pane fade"
           id="wordpress"
