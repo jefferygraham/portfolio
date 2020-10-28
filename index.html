@@ -79,17 +79,10 @@
     >
       <h2 class="border-bottom mb-5">Portfolio</h2>
       <ul class="nav nav-tabs" id="portfolioTab" role="tablist">
+        
         <li class="nav-item" role="presentation">
-          <a
-            class="nav-link active text-secondary"
-            id="bootstrap-tab"
-            data-toggle="tab"
-            href="#bootstrap"
-            role="tab"
-            aria-controls="bootstrap"
-            aria-selected="true"
-            >Bootstrap</a
-          >
+          <a class="nav-link active text-secondary" id="react-tab" data-toggle="tab" href="#react-redux" role="tab"
+            aria-controls="react-redux" aria-selected="true">React/Redux</a>
         </li>
         <li class="nav-item" role="presentation">
           <a
@@ -104,16 +97,8 @@
           >
         </li>
         <li class="nav-item" role="presentation">
-          <a
-            class="nav-link text-secondary"
-            id="react-tab"
-            data-toggle="tab"
-            href="#react"
-            role="tab"
-            aria-controls="react"
-            aria-selected="false"
-            >React</a
-          >
+          <a class="nav-link  text-secondary" id="bootstrap-tab" data-toggle="tab" href="#bootstrap" role="tab"
+            aria-controls="bootstrap" aria-selected="false">Bootstrap</a>
         </li>
         <li class="nav-item" role="presentation">
           <a
@@ -142,7 +127,7 @@
       </ul>
       <div class="tab-content" id="myPortfolioTabContent">
         <div
-          class="tab-pane fade show active"
+          class="tab-pane fade"
           id="bootstrap"
           role="tabpanel"
           aria-labelledby="bootstrap-tab"
@@ -304,11 +289,57 @@
           </div>
         </div>
         <div
-          class="tab-pane fade"
-          id="react"
+          class="tab-pane fade show active"
+          id="react-redux"
           role="tabpanel"
-          aria-labelledby="react-tab"
+          aria-labelledby="react-redux-tab"
         >
+          <div class="row row-content">
+            <div class="col-md">
+              <h3>
+                Would You Rather App
+                <a
+                  href="https://github.com/jefferygraham/reactnd-project-would-you-rather"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="text-secondary"
+                  ><i class="fa fa-github" aria-hidden="true"></i
+                ></a>
+              </h3>
+              <p>
+                This is a web app that lets a user play the “Would You Rather?” game. The game goes like this: A user is asked a
+                question in the form: “Would you rather [option A] or [option B] ?”.
+                
+                Users are able to ask and answer questions, see which questions they have/haven’t answered, see how other people have
+                voted, and see the ranking of users on the leaderboard.
+                
+                Once the user logs in, the user is able to toggle between his/her answered and unanswered polls on the home page. The
+                polls in both categories are arranged from the most recently created (top) to the least recently created (bottom).
+                
+                Upon voting in a poll, all of the information of an answered poll is displayed. The user’s response is recorded and
+                clearly visible on the poll details page. Users can only vote once per poll; they are not allowed to change their answer
+                after they’ve voted. When the user comes back to the home page, the polling question appears in the “Answered” column.
+              </p>
+            </div>
+            <div class="col-md">
+              <div class="card shadow">
+                <img
+                  src="./images/would-you-rather-react-redux.png"
+                  class="cover-image card-img-top"
+                  alt="Screenshot of Would You Rather App"
+                />
+                <div class="middle">
+                  <a
+                    class="btn btn-dark"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="https://jefferylgraham-would-you-rather.netlify.app/"
+                    >See Live</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="row row-content">
             <div class="col-md">
               <h3>
